@@ -1,14 +1,14 @@
 // Require schema and model from mongoose
-const mongoose = require('mongoose');
+const {Schema, model} = require('mongoose');
 
 //Configuring individual properties using Schema Types
-const userSchema = new mongoose.Schema(
+const userSchema = new Schema(
     {
       username: { 
         type: String,
         required: true,
-        unique: true
-        trim: true
+        unique: true,
+        trim: true.
     },
 
     email: { 

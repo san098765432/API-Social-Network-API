@@ -1,8 +1,8 @@
-// Require schema and model from mongoose
+// Importing functions required from mongoose library
 const { Schema, model } = require('mongoose');
 
 
-//Configuring individual properties using Schema Types
+//defining the schema
 const thoughtSchema = new Schema(
     {
       thoughtText: { 
@@ -36,6 +36,12 @@ const thoughtSchema = new Schema(
     }
   );
 
+
+  // creating a new instance of the thought schema
+  const schema = new Schema(thoughtSchema);
+
+  //create the model
+  const Thought = model ('Thought', schema);
 
   module.exports = Thought;
   

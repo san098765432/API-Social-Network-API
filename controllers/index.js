@@ -39,7 +39,7 @@ const  deleteThought = (req, res) => {
   }
 
 
-const updateThought = (req, res) => {//TO-DO}; 
+const updateThought = (req, res) => //{TO-DO}; 
 
 
 

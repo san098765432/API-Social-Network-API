@@ -1,44 +1,42 @@
-// Require schema and model from mongoose
-const {Schema, model} = require('mongoose');
+const { Schema, model} = require("mongoose");
 
-//Configuring individual properties using Schema Types
 const userSchema = new Schema(
-    {
-      username: { 
-        type: String,
-        required: true,
-        unique: true,
-        trim: true.
+  {
+    username: {
+      type: String,
+      required: true,
+      unique: true,
+      trim: true,
     },
-
-    email: { 
-        type: String, 
-        required: true,
-        unique: true,
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+      match:[/.+@.+\..+/]
     },
-
     thoughts: [{
-        type: Schema.Types.ObjectId,
-        ref: "Thought",
+      type: Schema.Types.ObjectId,
+      ref: "Thought",
     }],
-
     friends: [{
-        type: Schema.Types.ObjectId,
-        ref: "User",
-      }],
-
+      type: Schema.Types.ObjectId,
+      ref: "User",
+    }],
+  },
+  {
+    toJSON: {
+      virtuals: true,
     },
-    {
-      toJSON: {
-        virtuals: true,
-      },
-      id: false,
-    }
-  );
+    id: false,
+  }
+);
 
+userSchema.virtual('friendCount').get(function () {
+  return this.friends.length;
+});
 
-  module.exports = User;
+const User = model('user', userSchema);
 
-
+module.exports = User;
   
   

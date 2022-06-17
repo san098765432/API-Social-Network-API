@@ -26,18 +26,14 @@ WHEN I test API POST and DELETE routes in Insomnia
 THEN I am able to successfully create and delete reactions to thoughts and add and rem=ove friends to a user’s friend list
 ```
 
-<<<<<<< HEAD
+
 ## SCREENSHOT
 <figure>
 <img src="./assets/screenshot.png">
 </figure>
-=======
 
-### Deliverables: 10%
 
-* Your GitHub repository containing your application code.
-
-### Walkthrough Video: 37%
+## Walkthrough Video: 37%
 
 * A walkthrough video that demonstrates the functionality of the social media API must be submitted, and a link to the video should be included in your README file.
 
@@ -57,13 +53,12 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 
 
-
-
 ## LINKS
+
 
 https://github.com/san098765432/API-Social-Network-API
 
-<<<<<<< HEAD
+
 https://drive.google.com/file/d/1w9_QusElUsx3ahg-YgoqqvYczvF2Zz4G/view
 
 https://drive.google.com/file/d/1q06xCxG58mq4keNFDJy-_V20Jxa_tE9r/view

@@ -6,7 +6,7 @@ To  build an API for a social network web application where users can share thei
 
 ## User Story
 
-```md
+
 AS A social media startup
 I WANT an API for my social network that uses a NoSQL database
 SO THAT my website can handle large amounts of unstructured data
@@ -14,7 +14,6 @@ SO THAT my website can handle large amounts of unstructured data
 
 ## Acceptance Criteria
 
-```md
 GIVEN a social network API
 WHEN I enter the command to invoke the application
 THEN my server is started and the Mongoose models are synced to the MongoDB database
@@ -24,14 +23,13 @@ WHEN I test API POST, PUT, and DELETE routes in Insomnia
 THEN I am able to successfully create, update, and delete users and thoughts in my database
 WHEN I test API POST and DELETE routes in Insomnia
 THEN I am able to successfully create and delete reactions to thoughts and add and rem=ove friends to a user’s friend list
-```
 
-<<<<<<< HEAD
+
 ## SCREENSHOT
 <figure>
 <img src="./assets/screenshot.png">
 </figure>
-=======
+
 
 ### Deliverables: 10%
 
@@ -63,7 +61,6 @@ THEN I am able to successfully create and delete reactions to thoughts and add a
 
 https://github.com/san098765432/API-Social-Network-API
 
-<<<<<<< HEAD
 https://drive.google.com/file/d/1w9_QusElUsx3ahg-YgoqqvYczvF2Zz4G/view
 
 https://drive.google.com/file/d/1q06xCxG58mq4keNFDJy-_V20Jxa_tE9r/view
